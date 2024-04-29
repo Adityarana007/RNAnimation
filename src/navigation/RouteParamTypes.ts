@@ -4,4 +4,5 @@ export type RouteParamTypes = {
   HomeTab: undefined;
   Profile: undefined;
   ScrollToIndex: undefined;
+  BasicAnimation: undefined;
 };

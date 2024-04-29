@@ -11,13 +11,18 @@ const Home = () => {
   const onScrollToIndexPress = () => {
     navigation.navigate(ScreenNameKeys.SCROLL_TO_INDEX);
   }
+  const onBasicAnimationPress = () => {
+    navigation.navigate(ScreenNameKeys.BASIC_ANIMATION);
+  }
   return (
     <>
       <Header title={'Home'} />
       <SafeAreaView style={styles.container}>
         <View style={styles.signinContinueView}>
-          {/* <Text style={styles.signinText}>Welcome to Home Screen</Text> */}
-          <Button title='Scroll To Index' onPress={onScrollToIndexPress}/>
+          <View style={styles.flexRow}>
+            <Button title='Scroll To Index' onPress={onScrollToIndexPress}/>
+            <Button title='Basic Animation' onPress={onBasicAnimationPress}/>
+          </View>
         </View>
       </SafeAreaView>
     </>

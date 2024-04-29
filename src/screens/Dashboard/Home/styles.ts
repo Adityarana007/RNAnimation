@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: colors.white,
-        alignItems: 'center',
+        // alignItems: 'center',
 
     },
     signinContinueView: {
@@ -18,6 +18,13 @@ const styles = StyleSheet.create({
     },
     loginText: {
         color: colors.white,
+    },
+    flexRow:{
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+    },
+    marginTop10:{
+        marginTop: moderateScaleVertical(10)
     }
 });
 export default styles;

@@ -7,6 +7,7 @@ import {ScreenNameKeys} from '../constants/ScreenNameKeys';
 import Login from '../screens/PreLogin/Login';
 import HomeTabs from './HomeTabs';
 import ScrollToIndex from '../screens/Dashboard/Home/ScrollToIndex';
+import BasicAnimation from '../screens/Dashboard/Home/Basic';
 
 const Stack = createStackNavigator<RouteParamTypes>();
 const MyTheme = {
@@ -23,6 +24,7 @@ const Routes = () => {
         <Stack.Screen name={ScreenNameKeys.LOGIN} component={Login} />
         <Stack.Screen name={ScreenNameKeys.HOME_TAB} component={HomeTabs} />
         <Stack.Screen name={ScreenNameKeys.SCROLL_TO_INDEX} component={ScrollToIndex} />
+        <Stack.Screen name={ScreenNameKeys.BASIC_ANIMATION} component={BasicAnimation} />
 
       </Stack.Navigator>
     </NavigationContainer>
